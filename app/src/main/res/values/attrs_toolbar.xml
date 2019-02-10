@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomToolBar">
+        <attr name="text" format="string|reference"/><!--文字内容-->
+        <attr name="textSize" format="dimension|reference"/><!--文字大小-->
+        <attr name="textColor" format="color|reference"/><!--文字颜色-->
+        <attr name="leftIcon" format="color|reference"/><!--左边图标-->
+        <attr name="BackgroundColor" format="color|reference"/><!--背景颜色-->
+    </declare-styleable>
+</resources>

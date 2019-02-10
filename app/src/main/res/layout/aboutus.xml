@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hp.college.aboutusActivity">
+    <com.example.hp.college.util.CustomToolBar
+        android:id="@+id/act_tb_changed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:BackgroundColor="@color/colorBackGround"
+        app:text="关于我们"
+        app:textColor="@color/titileColor"
+        app:leftIcon="@drawable/ic_back">
+    </com.example.hp.college.util.CustomToolBar>
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:background="#45a0ef">-->
+    <!--<ImageView-->
+    <!--android:id="@+id/fanhuigerenzhongxin"-->
+    <!--android:clickable="true"-->
+    <!--android:onClick="onClick"-->
+    <!--android:layout_width="25dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_margin="5dp"-->
+    <!--android:src="@drawable/back" />-->
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:gravity="center"-->
+    <!--android:text="关于我们"-->
+    <!--android:textSize="20sp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:textColor="#FFFFFF"/>-->
+    <!--</RelativeLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/us" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上海海洋大学"
+                android:textColor="#000000"
+                android:layout_marginTop="30dp"
+                android:textSize="45dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="      上海海洋大学（Shanghai Ocean University）是上海市人民政府与国家海洋局、农业农村部共建的多科性应用研究型高等学府，国家首批“双一流”世界一流学科建设高校，上海市首批深化创新创业教育改革示范高校，全国毕业生就业典型经验高校，入选教育部“卓越农林人才教育培养计划”、“海外高层次人才引进计划”和“国家建设高水平大学公派研究生项目”，是上海市水产学会、上海市食品学会、上海市渔业经济研究会指导单位。" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="      学校前身是张謇、黄炎培创建于1912年的江苏省立水产学校，历经国立中央大学农学院水产学校、国立四川水产职业学校、上海市立吴淞水产专科学校、上海水产专科学校等办学时期，1952年升格为中国第一所本科水产高校——上海水产学院，1985年更名为上海水产大学，2008年更名为上海海洋大学。学校原隶属于农业部，2000年划转地方，由中央和地方共建，以上海市管理为主。"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="      截至2018年5月，上海海洋大学有浦东新区沪城环路校区、杨浦区军工路校区2个校区，另有滨海基地386亩、象山科教基地56.7亩；其中，主校区沪城环路校区占地约1600余亩，规划建设面积58.6万平方米；学校下设14个学院（部）；全日制本专科生近12000人、全日制研究生2600余人，教职工1200余人；拥有省部级重点实验室及平台30余个和国家大学科技园；有1个海外实习基地、近200个国内教学实践基地、5个教学科研基地；拥有我国第一艘远洋渔业资源调查船“淞航”号、我国唯一的CNAS和CMA资质认定的船舶压载水实验室。"/>
+    </LinearLayout>
+
+</LinearLayout>
