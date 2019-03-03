@@ -7,7 +7,7 @@ import org.greenrobot.greendao.annotation.Property;
 import org.greenrobot.greendao.annotation.Generated;
 
 @Entity
-public class TzggContact {
+public class CfbgContact {
     @Id(autoincrement = true)
     private Long id;
     @Property
@@ -16,15 +16,15 @@ public class TzggContact {
     private String data;
     @Property
     private String date;
-    @Generated(hash = 1346726406)
-    public TzggContact(Long id, String title, String data, String date) {
+    @Generated(hash = 122559843)
+    public CfbgContact(Long id, String title, String data, String date) {
         this.id = id;
         this.title = title;
         this.data = data;
         this.date = date;
     }
-    @Generated(hash = 1820715484)
-    public TzggContact() {
+    @Generated(hash = 283224329)
+    public CfbgContact() {
     }
     public Long getId() {
         return this.id;
@@ -53,5 +53,4 @@ public class TzggContact {
     public String getDate() {
         return this.date;
     }
-
 }

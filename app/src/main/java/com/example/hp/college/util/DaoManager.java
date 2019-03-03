@@ -2,7 +2,7 @@ package com.example.hp.college.util;
 
 import android.content.Context;
 
-import com.example.hp.college.Activity.fragment.ShouyePageFragment;
+import com.example.hp.college.bean.dao.CfbgContactDao;
 import com.example.hp.college.bean.dao.DaoMaster;
 import com.example.hp.college.bean.dao.DaoSession;
 import com.example.hp.college.bean.dao.TzggContactDao;
@@ -27,7 +27,7 @@ public class DaoManager {
         }
         return mInstance;
     }
-    public void init(ShouyePageFragment shouyePageFragment, Context context){
+    public void init(Context context){
         mContext = context;
         if (mhelper == null){
             mhelper = new DaoMaster.DevOpenHelper(mContext,DB_NAME,null);
@@ -44,6 +44,9 @@ public class DaoManager {
     }
     public TzggContactDao getTzggContactDao() {
         return daoSession.getTzggContactDao();
+    }
+    public CfbgContactDao getCfbgContactDao() {
+        return daoSession.getCfbgContactDao();
     }
 }
 

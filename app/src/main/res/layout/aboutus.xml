@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context="com.example.hp.college.aboutusActivity">
     <com.example.hp.college.util.CustomToolBar
-        android:id="@+id/act_tb_changed"
+        android:id="@+id/act_tb_aboutus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:BackgroundColor="@color/colorBackGround"
@@ -15,27 +15,7 @@
         app:textColor="@color/titileColor"
         app:leftIcon="@drawable/ic_back">
     </com.example.hp.college.util.CustomToolBar>
-    <!--<RelativeLayout-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="40dp"-->
-    <!--android:background="#45a0ef">-->
-    <!--<ImageView-->
-    <!--android:id="@+id/fanhuigerenzhongxin"-->
-    <!--android:clickable="true"-->
-    <!--android:onClick="onClick"-->
-    <!--android:layout_width="25dp"-->
-    <!--android:layout_height="40dp"-->
-    <!--android:layout_margin="5dp"-->
-    <!--android:src="@drawable/back" />-->
-    <!--<TextView-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="40dp"-->
-    <!--android:gravity="center"-->
-    <!--android:text="关于我们"-->
-    <!--android:textSize="20sp"-->
-    <!--android:layout_gravity="center_vertical"-->
-    <!--android:textColor="#FFFFFF"/>-->
-    <!--</RelativeLayout>-->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
