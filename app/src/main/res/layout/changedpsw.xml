@@ -5,15 +5,15 @@
     android:layout_height="fill_parent"
     android:orientation="vertical">
 
-    <com.example.hp.register.util.CustomToolBar
+    <com.example.hp.college.util.CustomToolBar
         android:id="@+id/act_tb_changedpsw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:leftIcon="@drawable/ic_back"
         app:text="修改密码"
-        app:BackgroundColor="@color/tb_bkcolor"
-        app:textColor="@color/tb_textcolor">
-    </com.example.hp.register.util.CustomToolBar>
+        app:BackgroundColor="@color/colorBackGround"
+        app:textColor="@color/titileColor">
+    </com.example.hp.college.util.CustomToolBar>
 
     <LinearLayout
         android:layout_width="wrap_content"

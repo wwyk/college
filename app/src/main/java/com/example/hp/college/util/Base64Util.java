@@ -1,4 +1,4 @@
-package com.example.hp.register.util;
+package com.example.hp.college.util;
 
 /**
  * Base64 工具类

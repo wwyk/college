@@ -1,4 +1,4 @@
-package com.example.hp.register;
+package com.example.hp.college.Activity.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,11 +8,12 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.hp.register.Constans.Constants;
-import com.example.hp.register.bean.StudentsContact;
-import com.example.hp.register.bean.dao.StudentsContactDao;
-import com.example.hp.register.util.CustomToolBar;
-import com.example.hp.register.util.DaoManager;
+import com.example.hp.college.Constants.Constants;
+import com.example.hp.college.R;
+import com.example.hp.college.bean.StudentsContact;
+import com.example.hp.college.bean.dao.StudentsContactDao;
+import com.example.hp.college.util.CustomToolBar;
+import com.example.hp.college.util.DaoManager;
 
 import java.util.List;
 
@@ -30,9 +31,7 @@ public class personalActivity extends AppCompatActivity {
         init();
         initView();
         initData();
-
         initListener();
-
     }
 
     private void initData() {
@@ -43,8 +42,6 @@ public class personalActivity extends AppCompatActivity {
         tv_stuname.setText(studentsContacts.get(0).getStuname());
         tv_usernum.setText(studentsContacts.get(0).getUsername());
         tv_username.setText(studentsContacts.get(0).getUsername());
-
-
     }
 
     private void init() {
@@ -67,9 +64,6 @@ public class personalActivity extends AppCompatActivity {
         tv_stuname = findViewById(R.id.tv_stuname);
         tv_usernum = findViewById(R.id.tv_usernum);
         tv_username = findViewById(R.id.tv_username);
-
-
-
     }
 
     private void initListener() {

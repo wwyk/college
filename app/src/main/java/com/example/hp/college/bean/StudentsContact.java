@@ -1,9 +1,9 @@
-package com.example.hp.register.bean;
+package com.example.hp.college.bean;
 
 import org.greenrobot.greendao.annotation.Entity;
-import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.Property;
+import org.greenrobot.greendao.annotation.Generated;
 
 @Entity
 public class StudentsContact {
@@ -26,8 +26,6 @@ public class StudentsContact {
     @Generated(hash = 68059078)
     public StudentsContact() {
     }
-
-
     public Long getId() {
         return this.id;
     }
@@ -52,4 +50,6 @@ public class StudentsContact {
     public void setUserpsw(String userpsw) {
         this.userpsw = userpsw;
     }
+
+
 }

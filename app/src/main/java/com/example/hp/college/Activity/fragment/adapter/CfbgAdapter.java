@@ -54,13 +54,11 @@ public class CfbgAdapter extends BaseAdapter {
             viewHolder = (ViewHolder) view.getTag();
         }
         viewHolder.cfbgTitle.setText(cfbgContact.getTitle());
-//        viewHolder.tzggData.setText(tzggContact.getData());
         viewHolder.cfbgDate.setText(cfbgContact.getDate());
         return view;
     }
     class ViewHolder {
         TextView cfbgTitle;
-//        TextView tzggData;
         TextView cfbgDate;
     }
 }

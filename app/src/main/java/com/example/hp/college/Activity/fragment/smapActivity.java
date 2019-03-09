@@ -1,9 +1,10 @@
-package com.example.hp.college;
+package com.example.hp.college.Activity.fragment;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
+import android.content.Intent;
 import android.graphics.Point;
 import android.graphics.Rect;
 import android.os.Bundle;
@@ -12,6 +13,7 @@ import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
 
+import com.example.hp.college.R;
 import com.example.hp.college.util.CustomToolBar;
 
 public class smapActivity extends AppCompatActivity {
@@ -27,11 +29,6 @@ public class smapActivity extends AppCompatActivity {
         setContentView(R.layout.smap);
         initView();
         initListener();
-
-
-
-
-
     }
 
     private void initListener() {
@@ -48,15 +45,14 @@ public class smapActivity extends AppCompatActivity {
             }
         });
 
-//        customToolBar.setOnLeftIconClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(smapActivity.this,MainActivity.class);
-//                intent.putExtra("id",1);
-//                startActivity(intent);
-//                finish();
-//            }
-//        });
+        customToolBar.setOnLeftIconClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(smapActivity.this,MainActivity.class);
+                setResult(4,intent);
+                finish();
+            }
+        });
     }
 
     private void initView() {

@@ -1,4 +1,4 @@
-package com.example.hp.register;
+package com.example.hp.college.Activity.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,7 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.hp.register.Constans.Constants;
+import com.example.hp.college.Constants.Constants;
+import com.example.hp.college.R;
+
 
 public class loginActivity extends AppCompatActivity {
     private TextView act_tv_chagnedpse,act_tv_personal;
@@ -17,10 +19,8 @@ public class loginActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_main);
-
         initViews();
         initListener();
-
     }
 
     private void initListener() {
@@ -41,9 +41,12 @@ public class loginActivity extends AppCompatActivity {
         act_btn_logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(loginActivity.this,ShezhiActivity.class);
-                startActivity(intent);
+                Intent intent = new Intent(loginActivity.this,MainActivity.class);
+                setResult(2,intent);
                 finish();
+//                Intent intent = new Intent(loginActivity.this,ShezhiPageFragment.class);
+//                startActivity(intent);
+//                finish();
             }
         });
     }

@@ -1,8 +1,10 @@
-package com.example.hp.college;
+package com.example.hp.college.Activity.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+
+import com.example.hp.college.R;
 
 public class scoreActivity extends AppCompatActivity {
     @Override

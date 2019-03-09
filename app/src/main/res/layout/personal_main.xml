@@ -5,16 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    tools:context=".personalActivity">
+    tools:context=".Activity.fragment.personalActivity">
 
-    <com.example.hp.register.util.CustomToolBar
+    <com.example.hp.college.util.CustomToolBar
         android:id="@+id/act_tb_gerenxinxi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:BackgroundColor="@color/tb_bkcolor"
+        app:BackgroundColor="@color/colorBackGround"
+        app:textColor="@color/titileColor"
         app:text="个人信息"
         app:leftIcon="@drawable/ic_back">
-    </com.example.hp.register.util.CustomToolBar>
+    </com.example.hp.college.util.CustomToolBar>
 
     <LinearLayout
         android:layout_width="match_parent"

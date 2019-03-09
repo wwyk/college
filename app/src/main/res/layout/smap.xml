@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".smapActivity">
+    tools:context=".Activity.fragment.smapActivity">
 
     <LinearLayout
         android:orientation="vertical"
@@ -17,7 +17,8 @@
         android:layout_height="wrap_content"
         app:BackgroundColor="@color/colorBackGround"
         app:textColor="@color/titileColor"
-        app:text="校园地图">
+        app:text="校园地图"
+        app:leftIcon="@drawable/ic_back">
     </com.example.hp.college.util.CustomToolBar>
         <ImageView
             android:id="@+id/pc_smapone"

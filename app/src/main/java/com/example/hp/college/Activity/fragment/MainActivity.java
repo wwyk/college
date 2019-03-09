@@ -1,6 +1,8 @@
-package com.example.hp.college;
+package com.example.hp.college.Activity.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -8,10 +10,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.RadioGroup;
 import android.widget.ScrollView;
 
-import com.example.hp.college.Activity.fragment.FaxianPageFragment;
-import com.example.hp.college.Activity.fragment.JiaowuPageFragment;
-import com.example.hp.college.Activity.fragment.ShezhiPageFragment;
-import com.example.hp.college.Activity.fragment.ShouyePageFragment;
+import com.example.hp.college.Activity.fragment.Fragment.FaxianPageFragment;
+import com.example.hp.college.Activity.fragment.Fragment.JiaowuPageFragment;
+import com.example.hp.college.Activity.fragment.Fragment.ShezhiPageFragment;
+import com.example.hp.college.Activity.fragment.Fragment.ShouyePageFragment;
+import com.example.hp.college.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     ShezhiPageFragment shezhiPageFragment;
     FragmentManager fragmentManager;
     String [] fragmentsNames = {"shouyePageFragment","jiaowuPageFragment","faxianPageFragment","shezhiPageFragment"};
+    private Object ShouyePageFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,23 +81,21 @@ public class MainActivity extends AppCompatActivity {
 //        cfbgContact.setDate("2018-10-29");
 //        cfbgContactDao.insert(cfbgContact);
 //        cfbgContactDao.save(cfbgContact);
-
         initViews();
 
         int id = getIntent().getIntExtra("id", 0);
         if (id == 1) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.frag_jw,new JiaowuPageFragment())
+                    .replace(R.id.jiaowu,new JiaowuPageFragment())
                     .addToBackStack(null)
                     .commit();
         }
 
     }
-
     private void initViews() {
-        scrollView = (ScrollView) findViewById(R.id.main_content);
-        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.btn_guid);
+        scrollView = findViewById(R.id.main_content);
+        RadioGroup radioGroup = findViewById(R.id.btn_guid);
 
         fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -159,7 +161,18 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == 2){
+            fragmentManager.beginTransaction().detach(shouyePageFragment).commit();
+            fragmentManager.beginTransaction().attach(shouyePageFragment).commit();
+        }
+        if (resultCode == 4){
+            fragmentManager.beginTransaction().detach(jiaowuPageFragment).commit();
+            fragmentManager.beginTransaction().attach(jiaowuPageFragment).commit();
+        }
+    }
 }

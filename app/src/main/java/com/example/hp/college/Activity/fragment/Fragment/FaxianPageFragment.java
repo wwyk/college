@@ -1,4 +1,4 @@
-package com.example.hp.college.Activity.fragment;
+package com.example.hp.college.Activity.fragment.Fragment;
 
 /**
  * Created by HP on 2019/1/6.
@@ -37,12 +37,19 @@ public class FaxianPageFragment extends Fragment {
     private TextView textView;
     private Button btn_daohang;
     private Button mCallButton;
-
     //声明mlocationClient对象
     public AMapLocationClient mlocationClient;
-    //声明mLocationOption对象
+    //    //声明mLocationOption对象
     public AMapLocationClientOption mLocationOption = null;
 
+    public FaxianPageFragment(){
+    }
+//    @Override
+//    public void onCreate(@Nullable Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//
+//        initDatas();
+//    }
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -86,15 +93,15 @@ public class FaxianPageFragment extends Fragment {
                         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                         Date date = new Date(aMapLocation.getTime());
                         df.format(date);//定位时间
-                        Log.i(TAG, "获取纬度:" + aMapLocation.getLatitude());
-                        Log.i(TAG, "获取经度:" + aMapLocation.getLongitude());
-                        Log.i(TAG, "获取精度信息:" + aMapLocation.getAccuracy());
+//                        Log.i(TAG, "获取纬度:" + aMapLocation.getLatitude());
+//                        Log.i(TAG, "获取经度:" + aMapLocation.getLongitude());
+//                        Log.i(TAG, "获取精度信息:" + aMapLocation.getAccuracy());
                         Log.i(TAG, "地址:" + aMapLocation.getAddress());
-                        Log.i(TAG, "国家信息:" + aMapLocation.getCountry());
+//                        Log.i(TAG, "国家信息:" + aMapLocation.getCountry());
                         Log.i(TAG, "省信息:" + aMapLocation.getProvince());
-                        Log.i(TAG, "城市信息:" + aMapLocation.getCity());
-                        Log.i(TAG, "城区信息:" + aMapLocation.getDistrict());
-                        Log.i(TAG, "街道信息:" + aMapLocation.getStreet());
+//                        Log.i(TAG, "城市信息:" + aMapLocation.getCity());
+//                        Log.i(TAG, "城区信息:" + aMapLocation.getDistrict());
+//                        Log.i(TAG, "街道信息:" + aMapLocation.getStreet());
                         Log.i(TAG, "街道门牌号信息:" + aMapLocation.getStreetNum());
                         Log.i(TAG, "城市编码:" + aMapLocation.getCityCode());
                         Log.i(TAG, "地区编码:" + aMapLocation.getAdCode());
@@ -114,7 +121,6 @@ public class FaxianPageFragment extends Fragment {
                                 + aMapLocation.getErrorInfo());
                     }
                 }
-
             }
         });
         mLocationOption.setLocationMode(AMapLocationClientOption.AMapLocationMode.Hight_Accuracy);
@@ -128,8 +134,8 @@ public class FaxianPageFragment extends Fragment {
         // 在单次定位情况下，定位无论成功与否，都无需调用stopLocation()方法移除请求，定位sdk内部会移除
         //启动定位
         mlocationClient.startLocation();
-
     }
+
 
     private void initPermissions() {
         final RxPermissions rxPermissions = new RxPermissions(this);
@@ -160,7 +166,6 @@ public class FaxianPageFragment extends Fragment {
                 }
             }
         }).isDisposed();
-
     }
 
     private void initViews() {

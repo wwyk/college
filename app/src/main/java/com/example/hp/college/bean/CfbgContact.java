@@ -1,6 +1,4 @@
 package com.example.hp.college.bean;
-import com.example.hp.college.Activity.fragment.ShouyePageFragment;
-
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.Property;
@@ -44,13 +42,11 @@ public class CfbgContact {
     public void setData(String data) {
         this.data = data;
     }
-    public String getDate(ShouyePageFragment shouyePageFragment) {
+    public String getDate() {
         return this.date;
     }
     public void setDate(String date) {
         this.date = date;
     }
-    public String getDate() {
-        return this.date;
-    }
+
 }

@@ -31,44 +31,85 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activity.fragment.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".aboutusActivity">
+        <activity android:name=".Activity.fragment.loginActivity">
             <intent-filter>
-                <action android:name="android.new.aboutus" />
+                <action android:name="android.intent.login" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".tongzhigaonggaoActivity">
+        <activity android:name=".Activity.fragment.aboutusActivity">
             <intent-filter>
-                <action android:name="android.new.tongzhigaonggao" />
+                <action android:name="android.intent.aboutus" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".chufangbaogaoActivity">
+        <activity android:name=".Activity.fragment.tongzhigaonggaoActivity">
             <intent-filter>
-                <action android:name="android.new.chufangbaogao" />
+                <action android:name="android.intent.tongzhigaonggao" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".smapActivity">
+        <activity android:name=".Activity.fragment.chufangbaogaoActivity">
             <intent-filter>
-                <action android:name="android.new.smap" />
+                <action android:name="android.intent.chufangbaogao" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".scoreActivity">
+        <activity android:name=".Activity.fragment.smapActivity">
             <intent-filter>
-                <action android:name="android.new.score" />
+                <action android:name="android.intent.smap" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.fragment.scoreActivity">
+            <intent-filter>
+                <action android:name="android.intent.score" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.fragment.personalActivity">
+            <intent-filter>
+                <action android:name="android.intent.personal" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.fragment.changedpswActivity">
+            <intent-filter>
+                <action android:name="android.intent.changedpsw" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.fragment.technologyActivity">
+            <intent-filter>
+                <action android:name="android.intent.technologyActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.fragment.newsActivity">
+            <intent-filter>
+                <action android:name="android.intent.newsActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.fragment.collegeActivity">
+            <intent-filter>
+                <action android:name="android.intent.collegeActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.fragment.teacherActivity">
+            <intent-filter>
+                <action android:name="android.intent.teacherActivity" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <meta-data android:name="com.amap.api.v2.apikey" android:value="e9082bcfdc02358fdc9a94a1a2038ad8"> </meta-data>
         <service android:name="com.amap.api.location.APSService" />
     </application>
-
 </manifest>

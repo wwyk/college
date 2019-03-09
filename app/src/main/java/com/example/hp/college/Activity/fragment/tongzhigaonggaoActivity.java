@@ -1,10 +1,12 @@
-package com.example.hp.college;
+package com.example.hp.college.Activity.fragment;
 
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
+
+import com.example.hp.college.R;
 
 
 public class tongzhigaonggaoActivity extends AppCompatActivity {
@@ -23,9 +25,9 @@ public class tongzhigaonggaoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tongzhigonggao);
 
-        tzgg_title = (TextView) findViewById(R.id.tzgg_title);
-        tzgg_datetime = (TextView) findViewById(R.id.tzgg_datetime);
-        tzgg_data = (TextView) findViewById(R.id.tzgg_data);
+        tzgg_title = findViewById(R.id.tzgg_title);
+        tzgg_datetime = findViewById(R.id.tzgg_datetime);
+        tzgg_data = findViewById(R.id.tzgg_data);
 
 
         Intent intent = getIntent();

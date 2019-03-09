@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    tools:context="com.example.hp.college.aboutusActivity">
+    tools:context="com.example.hp.college.Activity.fragment.aboutusActivity">
     <com.example.hp.college.util.CustomToolBar
         android:id="@+id/act_tb_aboutus"
         android:layout_width="match_parent"

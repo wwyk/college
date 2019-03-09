@@ -1,4 +1,4 @@
-package com.example.hp.college.Activity.fragment;
+package com.example.hp.college.Activity.fragment.Fragment;
 
 /**
  * Created by HP on 2019/1/6.
@@ -19,7 +19,7 @@ import com.example.hp.college.Constants.Constants;
 import com.example.hp.college.R;
 
 public class JiaowuPageFragment extends Fragment {
-    private ImageView iv_yikatong,iv_score,iv_tel,iv_citiao,iv_schoolkaikuang,iv_rli,iv_schoolmap;
+    private ImageView iv_score,iv_tel,iv_citiao,iv_schoolkaikuang,iv_rli,iv_schoolmap;
 
 
     public JiaowuPageFragment(){
@@ -41,18 +41,12 @@ public class JiaowuPageFragment extends Fragment {
     }
 
     private void initListener() {
-        iv_yikatong.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-        iv_score.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
+//        iv_score.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//            }
+//        });
         iv_tel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -91,14 +85,13 @@ public class JiaowuPageFragment extends Fragment {
 //                Uri uri = Uri.parse("https://www.shou.edu.cn/xydt/list.htm");
 //                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 Intent intent = new Intent(Constants.SMAP_ACTION);
-                startActivity(intent);
+                startActivityForResult(intent,3);
             }
         });
     }
 
     private void initView() {
-        iv_yikatong = getView().findViewById(R.id.btn_yikatong);
-        iv_score = getView().findViewById(R.id.btn_score);
+//        iv_score = getView().findViewById(R.id.btn_score);
         iv_tel = getView().findViewById(R.id.btn_tel);
         iv_citiao = getView().findViewById(R.id.btn_citiao);
         iv_schoolkaikuang = getView().findViewById(R.id.btn_schoolkaikuang);

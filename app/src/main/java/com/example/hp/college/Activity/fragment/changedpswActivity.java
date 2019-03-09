@@ -1,4 +1,4 @@
-package com.example.hp.register;
+package com.example.hp.college.Activity.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,15 +11,18 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.hp.register.Constans.Constants;
-import com.example.hp.register.bean.StudentsContact;
-import com.example.hp.register.bean.dao.StudentsContactDao;
-import com.example.hp.register.util.CustomToolBar;
-import com.example.hp.register.util.DaoManager;
+import com.example.hp.college.Activity.fragment.Fragment.ShezhiPageFragment;
+import com.example.hp.college.Constants.Constants;
+import com.example.hp.college.R;
+import com.example.hp.college.bean.StudentsContact;
+import com.example.hp.college.bean.dao.StudentsContactDao;
+import com.example.hp.college.util.CustomToolBar;
+import com.example.hp.college.util.DaoManager;
 
 import java.util.List;
 
 import es.dmoral.toasty.Toasty;
+
 
 public class changedpswActivity extends AppCompatActivity {
     private static final String TAG = "changedpswActivity";
@@ -111,7 +114,7 @@ public class changedpswActivity extends AppCompatActivity {
 
 
                     Toasty.success(changedpswActivity.this,"新密码设置成功",Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(changedpswActivity.this,ShezhiActivity.class);
+                    Intent intent = new Intent(changedpswActivity.this,ShezhiPageFragment.class);
                     startActivity(intent);
                     Log.i(TAG,"已经修改密码");
                     Log.i(TAG,"修改后的密码"+studentsContacts.get(0).getUserpsw());

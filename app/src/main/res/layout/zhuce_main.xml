@@ -6,7 +6,7 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:background="@drawable/dlbeijing"
-    tools:context="com.example.hp.college.zhuceActivity">
+    tools:context="com.example.hp.college.Activity.fragment.zhuceActivity">
 
 
 
