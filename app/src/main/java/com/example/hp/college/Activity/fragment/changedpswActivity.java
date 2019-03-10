@@ -29,7 +29,6 @@ public class changedpswActivity extends AppCompatActivity {
     EditText et_original_psw, et_new_psw, et_again_new_psw;
     private Button btn_confrimchanged;
     CustomToolBar customToolBar;
-    StudentsContact Stu;
     StudentsContact studentsContact;
     private List<StudentsContact> studentsContacts;
 

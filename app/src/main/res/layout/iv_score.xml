@@ -12,12 +12,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
     <com.example.hp.college.util.CustomToolBar
-        android:id="@+id/act_tb_smap"
+        android:id="@+id/act_tb_score"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:BackgroundColor="@color/colorBackGround"
         app:textColor="@color/titileColor"
-        app:text="成绩查询">
+        app:text="成绩查询"
+        app:leftIcon="@drawable/ic_back">
     </com.example.hp.college.util.CustomToolBar>
 
         <TextView

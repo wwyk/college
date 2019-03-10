@@ -18,71 +18,43 @@
         android:background="@drawable/background"
         android:orientation="vertical"
         android:paddingBottom="25dp">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
             android:layout_marginTop="10dp"
-            android:orientation="horizontal">
+            android:background="@drawable/background"
+            android:orientation="vertical"
+            android:paddingBottom="25dp">
 
-            <TextView
-                android:layout_width="5dp"
-                android:layout_height="20dp"
-                android:background="#00BFFF" />
-
-            <TextView
-                android:layout_width="0dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="4dp"
-                android:layout_weight="1"
-                android:text="学术讲座"
-                android:textSize="20sp" />
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="20dp"
+                    android:background="#00BFFF" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:text="科研动态"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/kydt_listView"
+                android:layout_width="match_parent"
+                android:layout_height="147dp"
+                android:divider="@null"></ListView>
         </LinearLayout>
-
-        <ListView
-            android:id="@+id/xxgk_listView"
-            android:layout_width="match_parent"
-            android:layout_height="147dp"
-            android:divider="@null"></ListView>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/background"
-        android:orientation="vertical"
-        android:paddingBottom="25dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="5dp"
-                android:layout_height="20dp"
-                android:background="#00BFFF" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="4dp"
-                android:layout_weight="1"
-                android:text="科研动态"
-                android:textSize="20sp" />
-        </LinearLayout>
-
-        <ListView
-            android:id="@+id/kydt_listView"
-            android:layout_width="match_parent"
-            android:layout_height="147dp"
-            android:divider="@null"></ListView>
     </LinearLayout>
 
     <LinearLayout

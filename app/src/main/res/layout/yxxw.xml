@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    tools:context="com.example.hp.college.Activity.fragment.tongzhigaonggaoActivity">
+    tools:context="com.example.hp.college.Activity.fragment.xmcgActivity">
 
     <ScrollView
         android:id="@+id/scrollView1"
@@ -18,31 +18,33 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
+
+
         <TextView
-            android:id="@+id/tzgg_title"
+            android:id="@+id/yxxw_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
             android:maxLines="1"
             android:text="关于2018年国家“万人计划”青年拔尖人才推荐人选的公示"
             android:textSize="15sp" />
         <TextView
-            android:id="@+id/tzgg_datetime"
+            android:id="@+id/yxxw_datetime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
             android:text="2018-08-06"
             android:textSize="15sp" />
         <TextView
-            android:id="@+id/tzgg_data"
+            android:id="@+id/yxxw_data"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
             android:text="  展2018年国家“万人计划”青"
             android:textSize="15sp" />
     </LinearLayout>

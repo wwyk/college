@@ -61,6 +61,36 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".Activity.fragment.kydtActivity">
+            <intent-filter>
+                <action android:name="android.intent.kydt" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.fragment.xydtActivity">
+            <intent-filter>
+                <action android:name="android.intent.xydt" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.fragment.yxxwActivity">
+            <intent-filter>
+                <action android:name="android.intent.yxxw" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.fragment.xsjzActivity">
+            <intent-filter>
+                <action android:name="android.intent.xsjz" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.fragment.xmcgActivity">
+            <intent-filter>
+                <action android:name="android.intent.xmcg" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".Activity.fragment.smapActivity">
             <intent-filter>
                 <action android:name="android.intent.smap" />

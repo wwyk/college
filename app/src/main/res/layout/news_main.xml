@@ -41,7 +41,7 @@
         </LinearLayout>
 
         <ListView
-            android:id="@+id/yxxw_listView"
+            android:id="@+id/news_listView"
             android:layout_width="match_parent"
             android:layout_height="147dp"
             android:divider="@null"></ListView>

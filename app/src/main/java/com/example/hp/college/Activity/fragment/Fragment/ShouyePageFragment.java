@@ -44,7 +44,6 @@ public class ShouyePageFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        initViews();
         initDatas();
     }
 
@@ -56,14 +55,6 @@ public class ShouyePageFragment extends Fragment {
         initView(view);
         initListener();
         return view;
-
-    }
-
-    private void initViews() {
-        technology = getView().findViewById(R.id.technology);
-        news = getView().findViewById(R.id.news);
-        college = getView().findViewById(R.id.college);
-        teacher = getView().findViewById(R.id.teacher);
 
     }
 
@@ -102,7 +93,6 @@ public class ShouyePageFragment extends Fragment {
     public void onActivityCreated(Bundle saveInstanceState) {
         super.onActivityCreated(saveInstanceState);
     }
-
 
     private void initDatas() {
         DaoManager daoManager = DaoManager.getInstance();

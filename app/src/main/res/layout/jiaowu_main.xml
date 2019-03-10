@@ -198,12 +198,12 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="4dp"
                 android:layout_weight="1"
-                android:text="信息公开"
+                android:text="学术讲座"
                 android:textSize="20sp" />
         </LinearLayout>
 
         <ListView
-            android:id="@+id/xxgk_listView"
+            android:id="@+id/xsjz_listView"
             android:layout_width="match_parent"
             android:layout_height="147dp"
             android:divider="@null"></ListView>

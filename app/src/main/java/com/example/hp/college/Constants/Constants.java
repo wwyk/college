@@ -10,6 +10,6 @@ public class Constants {
     public static final String NEWS_ACTION = "android.intent.newsActivity";
     public static final String COLLEGE_ACTION = "android.intent.collegeActivity";
     public static final String TEA_ACTION = "android.intent.teacherActivity";
-//    public static final String NEWS_ACTION = "android.intent.newsActivity";
-//    public static final String NEWS_ACTION = "android.intent.newsActivity";
+    public static final String ABOUT_ACTION = "android.intent.aboutus";
+    public static final String SCORE_ACTION = "android.intent.score";
 }

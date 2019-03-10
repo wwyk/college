@@ -13,7 +13,7 @@ import com.example.hp.college.R;
 
 
 public class loginActivity extends AppCompatActivity {
-    private TextView act_tv_chagnedpse,act_tv_personal;
+    private TextView act_tv_chagnedpse,act_tv_personal,act_tv_aboutus,act_tv_score;
     private Button act_btn_logout;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -24,6 +24,13 @@ public class loginActivity extends AppCompatActivity {
     }
 
     private void initListener() {
+        act_tv_score.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Constants.SCORE_ACTION);
+                startActivity(intent);
+            }
+        });
         act_tv_chagnedpse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,11 +56,20 @@ public class loginActivity extends AppCompatActivity {
 //                finish();
             }
         });
+        act_tv_aboutus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Constants.ABOUT_ACTION);
+                startActivity(intent);
+            }
+        });
     }
 
     private void initViews() {
+        act_tv_score = findViewById(R.id.act_tv_score);
         act_tv_chagnedpse  = findViewById(R.id.act_tv_changedpsw);
         act_tv_personal = findViewById(R.id.act_tv_personal);
+        act_tv_aboutus = findViewById(R.id.act_tv_aboutus);
         act_btn_logout= findViewById(R.id.act_btn_logout);
 
     }

@@ -60,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:text="学术讲座"
+                android:text="科技前沿"
                 android:textAlignment="center"
                 android:textColor="#000000" />
             <TextView
@@ -154,7 +154,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="4dp"
                     android:layout_weight="1"
-                    android:text="海大要闻"
+                    android:text="出访报告"
                     android:textSize="20sp" />
             </LinearLayout>
 
